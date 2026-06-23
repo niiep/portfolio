@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Pedro José Mesa - AI Developer & Software Engineer",
-  description: "Portfolio profesional de Pedro José Mesa - Desarrollador Junior en IA, Ingeniero de Software Multiplataforma, Especialista en Agentes de IA y Soluciones SaaS.",
+  title: "Pedro José Mesa Herrera - AI Developer & Software Engineer",
+  description: "Portfolio profesional de Pedro José Mesa Herrera - Desarrollador Junior en IA, Ingeniero de Software Multiplataforma, Especialista en Agentes de IA y Soluciones SaaS.",
   keywords: "AI Developer, Software Engineer, Caleida, SaaS, Machine Learning",
 };
 
@@ -33,7 +33,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-background text-gray-100">
         <AnimatedBackground />
         <Navbar />
-        <main className="flex-1">
+        <main className="relative z-10 flex-1">
           {children}
         </main>
       </body>
