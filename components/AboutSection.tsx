@@ -227,6 +227,7 @@ export default function AboutSection() {
 
           {/* Block 3: Certificates */}
           <motion.div
+            id="certifications"
             variants={bentoVariants}
             className="md:col-span-2"
           >
@@ -336,7 +337,7 @@ function CertificateCard({ certificate }: CertificateCardProps) {
         setIsHovered(false);
         setIsFlipped(false);
       }}
-      className="relative h-48 cursor-pointer group"
+      className="relative min-h-56 cursor-pointer group"
       style={{ perspective: '1200px' }}
     >
       {/* Card container with 3D flip effect */}
@@ -357,7 +358,7 @@ function CertificateCard({ certificate }: CertificateCardProps) {
           style={{
             backfaceVisibility: 'hidden',
           }}
-          className="absolute inset-0 p-6 rounded-2xl border border-white/10 backdrop-blur-xl bg-gradient-to-br from-white/5 to-white/[0.02] flex flex-col items-center justify-center text-center overflow-hidden group-hover:border-accent-violet/30 transition-colors duration-300"
+          className="absolute inset-0 p-8 rounded-2xl border border-white/10 backdrop-blur-xl bg-gradient-to-br from-white/5 to-white/[0.02] flex flex-col items-center justify-center text-center group-hover:border-accent-violet/30 transition-colors duration-300"
         >
           {/* Border beam effect */}
           <motion.div
@@ -393,7 +394,7 @@ function CertificateCard({ certificate }: CertificateCardProps) {
             >
               ✨
             </motion.div>
-            <h4 className="text-base font-semibold text-white leading-tight">
+            <h4 className="text-sm md:text-base font-semibold text-white leading-snug line-clamp-3">
               {certificate.title}
             </h4>
           </div>
@@ -405,7 +406,7 @@ function CertificateCard({ certificate }: CertificateCardProps) {
             backfaceVisibility: 'hidden',
             rotateY: 180,
           }}
-          className="absolute inset-0 p-6 rounded-2xl border border-white/10 backdrop-blur-xl bg-gradient-to-br from-accent-violet/10 to-accent-blue/10 flex flex-col items-center justify-center text-center overflow-hidden border-accent-violet/30"
+          className="absolute inset-0 p-8 rounded-2xl border border-white/10 backdrop-blur-xl bg-gradient-to-br from-accent-violet/10 to-accent-blue/10 flex flex-col items-center justify-center text-center border-accent-violet/30"
         >
           {/* Animated gradient background */}
           <motion.div
